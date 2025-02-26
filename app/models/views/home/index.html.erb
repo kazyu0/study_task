@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>宿題管理アプリ</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
+  
+</head>
+<body>
+  <div class="container">
+    <h1>宿題管理アプリ</h1>
+    <div class="actions">
+      <%= link_to 'ログイン', new_user_session_path, class: 'btn' %>
+      <%= link_to '新規登録', new_user_registration_path, class: 'btn' %>
+    </div>
+  </div>
+</body>
+</html>
